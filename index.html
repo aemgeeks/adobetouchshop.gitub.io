@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Ui</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="headerIn flexBox alignitemCenter justifyContentBetween">
+                    <div class="logo"><a href="index.html"><span class="logoIcon"><img src="images/logo_touchshop.svg" alt="logo"></span><span class="logoText">TouchShop</span></a></div>
+                    <div class="viewCartButtonSec">
+                        <span class="cartBtn disableClsss" id="viewCart" onclick="viewCartFunc()"><span id="viewitemsCount">0</span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="cartListSec">
+                <div class="container">
+                    <!-- <div class="titleSec flexBox alignitemCenter justifyContentBetween">
+                        <h1 class="blockTitle">All Items</h1>
+                        
+                    </div> -->
+                    
+                    <div class="cartPan flexBox justifyContentBetween">
+                        <div class="cartAllListSec">
+                            <div class="cartList flexBox" id="cartList"></div>
+                        </div>
+                        <div class="cartPopupSec" id="cartPopupBox">
+                            <span class="popupOverlay" onclick="closePopupFunc()"></span>
+                            <div class="cartPopupIn">
+                                <h4 class="cartTitle">All Cart List</h4>
+                                <span class="cartClose" onclick="closePopupFunc()"><i class="fa fa-times"></i></span>
+                                <div class="cartPopupBtm">
+                                    <div class="orderSummary" id="ordersummerySec">
+                                        <table cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Items</th>
+                                                    <th>Qty</th>
+                                                    <th>Price</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="ordsumTr">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="totalOrderSec" id="totalOrderId">
+                                        <h4 class="orderTitle">Total</h4>
+                                        <table cellspacing="0">
+                                            <tr>
+                                                <th>Items(<span id="itemsCount"></span>)</th>
+                                                <td id="cartItemPrice"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Discount</th>
+                                                <td id="discountItemPrice"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Type Discount</th>
+                                                <td id="typediscountPrice">$0</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Order Total</th>
+                                                <td id="totalItemPrice">$454</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footerIn flexBox alignitemCenter">
+                    <div class="copyrightSec">2018 <a href="#">TouchShop</a>. All rights reserved.</div>
+                    <div class="fooLinks">
+                        <ul class="flexBox alignitemCenter">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Leagal Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script type="text/javascript" src="data/data.json"></script>
+    <script src="js/newjs_es6.js" type="text/javascript"></script>
+</body>
+</html>
